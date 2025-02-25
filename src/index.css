@@ -1,11 +1,5 @@
 @import "tailwindcss";
 
 
-@theme {
-  --color-navy: #0a192f;
-  --color-white-custom: #e6f1ff;
-  --color-slate: #8892b0;
-  --color-cyan: oklch(0.789 0.154 211.53);
-}
 
 
