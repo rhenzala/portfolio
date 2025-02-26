@@ -1,4 +1,4 @@
-import { Linkedin, Github, Twitter, Mail } from 'lucide-react'
+import { Mail } from 'lucide-react'
 const Socials = () => {
     return (
         <div>
