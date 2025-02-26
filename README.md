@@ -1,8 +1,27 @@
-# React + Vite
+# Personal Website
+## Description
+This is my personal website, it contains a little detail about me, some of my projects, and ways to connect with me. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Technologies Used
+- React
+- Tailwind
+- Vite
 
-Currently, two official plugins are available:
+## Installation and Setup
+1. Clone the repository:
+```
+git clone git@github.com:rhenzala/portfolio.git
+``` 
+2. Install dependencies
+```
+npm install
+```
+3. Start the development server, on the root directory of the repository:
+```
+npm run dev
+```
+4. Open the project in browser
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Attribution
+The design for the website is copied from <a href="https://brittanychiang.com/" target="_blank">Brittany Chiang's</a> website.
+
