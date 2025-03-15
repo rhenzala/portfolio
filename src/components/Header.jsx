@@ -1,5 +1,6 @@
 import Socials from "./Socials.jsx";
 import Navbar from "./Navbar.jsx";
+import { MapPin } from "lucide-react";
 
 const Header = () => {
   return (
@@ -9,10 +10,14 @@ const Header = () => {
           Rhenzal Abdulsali
         </h1>
         <h2 className="text-slate-300 text-xl font-semibold mt-3 tracking-tight">
-          Aspiring DevOps Engineer
+          Full Stack Developer
         </h2>
         <p className="mt-4 max-w-xs leading-normal">
-          I am a new graduate aiming to be a DevOps.
+          A full stack developer with keen interest in backend. I mostly use JavaScript and Python.
+        </p>
+        <p className="mt-4 flex items-center gap-2">
+          <MapPin size={16}/>
+          <span>Quezon City, Philippines</span>
         </p>
       </div>
       <Navbar />
