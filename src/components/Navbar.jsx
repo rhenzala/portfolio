@@ -31,13 +31,13 @@ const Navbar = () => {
       <ul className="font-mono font-semibold mt-16 w-max">
         {[
           { id: "about", label: "About" },
+          { id: "experience", label: "Experience" },
           { id: "projects", label: "Projects" },
-          { id: "contact", label: "Contact" },
         ].map((item) => (
           <li key={item.id}>
             <a
               href={`#${item.id}`}
-              className={`group flex items-center py-3 ${
+              className={`group flex items-center py-1 ${
                 activeSection === item.id ? "text-slate-200" : "text-slate-500"
               }`}
             >
