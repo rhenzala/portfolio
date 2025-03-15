@@ -11,7 +11,7 @@ const Card = ({ project }) => {
         alt={project.title}
         className="w-32 h-18 rounded-md border-slate-700 border-solid border-2 flex-shrink-0 mb-4"
       />
-      <div>
+      <div className="w-full">
         <div className="flex justify-between">
           <h3 className="text-lg text-slate-200 group-hover:text-cyan-500 transition duration-300 leading-tight font-medium ">
               {project.title}
