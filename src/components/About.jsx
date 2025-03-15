@@ -1,3 +1,5 @@
+import Skills from "./Skills";
+
 const About = () => {
   return (
     <section
@@ -9,42 +11,11 @@ const About = () => {
         About Me
       </h2>
       <p className="mb-4">
-        Hey there! I'm Rhenzal Abdulsali, a passionate programmer with a
-        background in Electronics Engineering. I hold a Bachelor of Science in
-        Electronics Engineering (BS ECE) from{" "}
-        <a
-          href="https://plm.edu.ph/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-slate-200 hover:text-cyan-500 focus:text-cyan-500 font-medium transition duration-200"
-        >
-          Pamantasan ng Lungsod ng Maynila
-        </a>
-        , where I specialized in Telecommunications & Networking. My interest in
-        development started in high school where I was introduced to web
-        development and Java, and since then, I have been programming on and
-        off. Also, I have programming coursework in college where I learned
-        Java, Arduino, and Assembly.
+        I'm a full stack developer working with JavaScript for web development and Python for other projects. I like building things that are simple and functional, both on the frontend and backend. I also have some background in Network Engineering. 
       </p>
 
       <p className="mb-4">
-        Beside programmig, I am also interested in Network Engineering. I have
-        hands-on experience with Networking from my internship as a Network
-        Engineer Intern at{" "}
-        <a
-          href="https://dfp.com.ph/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-slate-200 hover:text-cyan-500 focus:text-cyan-500 font-medium transition duration-200"
-        >
-          Duty Free Philippines Corporation
-        </a>
-        , where I acquired experience with network switches, routers, access
-        points, telephony, and cabling.
-      </p>
-
-      <p className="mb-4">
-        I am continuously expanding my knowledge in networking through{" "}
+        Beside programming, I am continuously expanding my knowledge in networking through{" "}
         <a
           href="https://www.netacad.com/"
           target="_blank"
@@ -61,14 +32,11 @@ const About = () => {
           className="text-slate-200 hover:text-cyan-500 focus:text-cyan-500 font-medium transition duration-200"
         >
           AWS
-        </a>
-        , where I have gained hands-on experience with <strong>S3</strong>,{" "}
-        <strong>EC2</strong>, and <strong>VPC</strong> through the{" "}
-        <strong>Cloud Quest</strong> game. Additionally, I am enhancing my
-        Python skills, building upon the foundation I established during my
-        college capstone project, where we extensively utilized Python to
-        develop our solution.
+        </a> through the{" "}
+        <strong>Cloud Quest</strong> game, where I have gained hands-on experience with <strong>S3</strong>,{" "}
+        <strong>EC2</strong>, and <strong>VPC</strong>.
       </p>
+      <Skills />
     </section>
   );
 };

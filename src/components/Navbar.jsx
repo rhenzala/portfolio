@@ -27,8 +27,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="nav hidden lg:block">
-      <ul className="font-mono font-semibold mt-16 w-max">
+    <nav className="w-full sticky top-0 backdrop-blur-md bg-slate-950/70 h-16 px-4 flex items-center z-10">
+      <ul className=" bg-slate-800/40 backdrop-blur-sm rounded-md font-mono font-semibold w-full flex justify-around">
         {[
           { id: "about", label: "About" },
           { id: "experience", label: "Experience" },
@@ -42,14 +42,7 @@ const Navbar = () => {
               }`}
             >
               <span
-                className={`nav-indicator mr-4 h-2 w-2 transition-all motion-reduce:transition-none ${
-                  activeSection === item.id
-                    ? " bg-slate-200"
-                    : "bg-slate-600 group-hover:bg-slate-200  group-focus-visible:bg-slate-200"
-                }`}
-              ></span>
-              <span
-                className={`font-mono nav-text text-sm font-bold uppercase tracking-widest transition-all ${
+                className={`font-mono nav-text text-sm font-bold lowercase tracking-widest transition-all ${
                   activeSection === item.id
                     ? "text-slate-200"
                     : "group-hover:text-slate-200 group-focus-visible:text-slate-200"

@@ -1,13 +1,11 @@
 import { ExternalLink } from "lucide-react";
 import { useState } from "react";
-import cvapp from "../assets/cvapp.png";
-import minimsg from "../assets/minimsg.png";
-import weather from "../assets/weather.png";
-import readpi from "../assets/readpi.png";
+import projects from "../../public/scripts/projects";
 
 const Card = ({ project }) => {
   return (
-    <div className="lg:flex gap-4 rounded-lg bg-slate-800/50 p-8">
+    <a href={project.sourceCode} target="_blank" rel="noopener noreferrer">
+<div className="group lg:flex gap-4 rounded-lg bg-slate-800/50 p-8 hover:cursor-pointer hover:bg-slate-700/50 transition duration-300">
       <img
         src={project.imgSrc}
         alt={project.title}
@@ -15,22 +13,22 @@ const Card = ({ project }) => {
       />
       <div>
         <div className="flex justify-between">
-          <h3 className="text-lg text-slate-200 leading-tight font-medium ">
-            {project.title}
+          <h3 className="text-lg text-slate-200 group-hover:text-cyan-500 transition duration-300 leading-tight font-medium ">
+              {project.title}
           </h3>
+          
           <div className="flex gap-4">
             <a
               href={project.sourceCode}
               target="_blank"
               rel="noreferrer noopener"
               title={project.title}
-              className="group"
             >
               <svg
                 viewBox="0 0 128 128"
                 width={24}
                 height={24}
-                className="fill-slate-500 group-hover:fill-slate-200 transition-colors duration-300"
+                className="fill-slate-500 hover:fill-slate-200 transition-colors duration-300"
               >
                 <g>
                   <path
@@ -47,10 +45,9 @@ const Card = ({ project }) => {
                 href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group"
               >
                 <ExternalLink
-                  className="text-slate-500 group-hover:text-slate-200 transition-colors duration-300"
+                  className="text-slate-500 hover:text-slate-200 transition-colors duration-300"
                   size={24}
                 />
               </a>
@@ -62,59 +59,20 @@ const Card = ({ project }) => {
           {project.tags.map((tag, index) => (
             <li
               key={index + 1}
-              className="text-cyan-500 bg-cyan-400/20 rounded-full px-2 py-1 text-xs font-bold"
+              className="text-cyan-500 bg-cyan-400/10 rounded-full px-2 py-1 text-xs font-bold"
             >
               {tag}
             </li>
           ))}
         </ul>
       </div>
-    </div>
+    </div>           
+    </a>
   );
 };
 
 const Projects = () => {
-  const [projects, setProjects] = useState([
-    {
-      id: 1,
-      title: "CV App",
-      description:
-        "Create a basic resume with personal information, education background, work experience, and skills.",
-      sourceCode: "https://github.com/rhenzala/cv-app",
-      demo: "https://cv-generator-teal.vercel.app/",
-      tags: ["React", "Tailwind", "Vercel"],
-      imgSrc: cvapp,
-    },
-    {
-      id: 2,
-      title: "Mini Message Board",
-      description:
-        "Write a message then post it. Also, view messages posted by other users.",
-      sourceCode: "https://github.com/rhenzala/mini-message-board",
-      demo: "https://future-cherry-rhenzala-2169222a.koyeb.app/",
-      tags: ["Express.js", "EJS", "Node.js"],
-      imgSrc: minimsg,
-    },
-    {
-      id: 3,
-      title: "Weather App",
-      description:
-        "Search for a city to view its current weather. This weather app uses the Visual Crossing free weather API to fetch data.",
-      sourceCode: "https://github.com/rhenzala/weather-app",
-      demo: "https://rhenzala.github.io/weather-app/",
-      tags: ["JavaScript", "Webpack"],
-      imgSrc: weather,
-    },
-    {
-      id: 4,
-      title: "Capstone Project",
-      description:
-        "A reading assistive device using Raspberry Pi and with Magnificaiton, Text-to-Speech, and Voice Command features.",
-      sourceCode: "https://github.com/rhenzala/readpi",
-      tags: ["Python", "Raspberry Pi"],
-      imgSrc: readpi,
-    },
-  ]);
+  const [projectLists] = useState(projects);
   return (
     <section
       id="projects"
@@ -125,8 +83,8 @@ const Projects = () => {
         Projects
       </h2>
       <ul>
-        {projects.map((project, index) => (
-          <li key={index + 1} className="mb-8">
+        {projectLists.map((project, index) => (
+          <li key={index + 1} className="mb-4">
             <Card project={project} />
           </li>
         ))}

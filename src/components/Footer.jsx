@@ -23,16 +23,7 @@ const Footer = () => {
         >
           Tailwind
         </a>
-        . Design is heavily inspired by{" "}
-        <a
-          href="https://brittanychiang.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-slate-300 hover:text-cyan-500 focus:text-cyan-500 font-semibold transition duration-200"
-        >
-          Brittany Chiang's{" "}
-        </a>
-        website.
+        . 
       </p>
     </footer>
   );

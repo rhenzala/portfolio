@@ -5,7 +5,7 @@ import Footer from "./Footer.jsx";
 
 const Main = () => {
   return (
-    <main className="lg:w-[52%] lg:py-24 pt-24">
+    <main className="py-16 px-4">
       <About />
       <Experience />
       <Projects />
