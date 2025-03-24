@@ -11,7 +11,7 @@ const projects = [
         "A simple blog that can render markdown in posts and comments.",
       sourceCode: "https://github.com/rhenzala/blog-users",
       demo: "https://mini-blog-pi.vercel.app/",
-      tags: ["express.js", "postgresql", "prisma-orm", "react", "tailwind", "jwt"],
+      tags: ["expressjs", "postgresql", "prisma-orm", "react", "tailwind", "jwt"],
       imgSrc: blog,
     },
     {
@@ -21,7 +21,7 @@ const projects = [
         "A simple file uploader built with Express.js, PrismaORM, and Supabase. Upload file and create folder, view and download files, view folder contents.",
       sourceCode: "https://github.com/rhenzala/file-uploader",
       demo: "https://picodrive.onrender.com/",
-      tags: ["express.js", "postgresql", "prisma"],
+      tags: ["expressjs", "postgresql", "prisma-orm"],
       imgSrc: picodrive,
     },
     {
@@ -39,7 +39,7 @@ const projects = [
       description:
         "A reading assistive device using Raspberry Pi and with Magnificaiton, Text-to-Speech, and Voice Command features.",
       sourceCode: "https://github.com/rhenzala/readpi",
-      tags: ["python", "raspberry pi"],
+      tags: ["python", "raspberry-pi"],
       imgSrc: readpi,
     },
   ]
