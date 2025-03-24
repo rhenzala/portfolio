@@ -27,7 +27,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="w-full sticky top-0 backdrop-blur-md bg-slate-950/70 h-16 px-4 flex items-center z-10">
+    <nav className="w-full sticky top-0 backdrop-blur-md bg-transparent h-16 px-4 flex items-center z-10">
       <ul className=" bg-slate-800/40 backdrop-blur-sm rounded-md font-mono font-semibold w-full flex justify-around">
         {[
           { id: "about", label: "About" },
