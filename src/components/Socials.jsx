@@ -18,7 +18,7 @@ const Socials = () => {
               viewBox="0 0 128 128"
               width={24}
               height={24}
-              className="fill-slate-500 group-hover:fill-slate-200 transition-colors duration-300"
+              className="fill-slate-500 group-hover:fill-slate-200 transform transition-all duration-300 hover:scale-110 hover:rotate-3"
             >
               <path d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3zM39.17 107H21.06V48.73h18.11zm-9-66.21a10.5 10.5 0 1110.49-10.5 10.5 10.5 0 01-10.54 10.48zM107 107H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53V48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75z"></path>
             </svg>
@@ -36,7 +36,7 @@ const Socials = () => {
               viewBox="0 0 128 128"
               width={24}
               height={24}
-              className="fill-slate-500 group-hover:fill-slate-200 transition-colors duration-300"
+              className="fill-slate-500 group-hover:fill-slate-200 transform transition-all duration-300 hover:scale-110 hover:rotate-3"
             >
               <g>
                 <path
@@ -61,7 +61,7 @@ const Socials = () => {
               viewBox="0 0 128 128"
               width={24}
               height={24}
-              className="fill-slate-500 group-hover:fill-slate-200 transition-colors duration-300"
+              className="fill-slate-500 group-hover:fill-slate-200 transform transition-all duration-300 hover:scale-110 hover:rotate-3"
             >
               <path d="M75.916 54.2 122.542 0h-11.05L71.008 47.06 38.672 0H1.376l48.898 71.164L1.376 128h11.05L55.18 78.303 89.328 128h37.296L75.913 54.2ZM60.782 71.79l-4.955-7.086-39.42-56.386h16.972L65.19 53.824l4.954 7.086 41.353 59.15h-16.97L60.782 71.793Z"></path>
             </svg>
@@ -70,7 +70,7 @@ const Socials = () => {
         <li>
           <a href="mailto:rhenzala@gmail.com" className="group">
             <Mail
-              className="text-slate-500 group-hover:text-slate-200 transition-colors duration-300"
+              className="text-slate-500 group-hover:text-slate-200 transform transition-all duration-300 hover:scale-110 hover:rotate-3"
               size={24}
             />
           </a>

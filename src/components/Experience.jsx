@@ -33,7 +33,7 @@ const Experience = () => {
       }`}
       aria-label="Experience and Education"
     >
-      <h2 className={`text-xl font-mono text-slate-200 tracking-tight font-medium mb-8 transition-all duration-500 delay-100 ${
+      <h2 className={`text-xl text-slate-200 tracking-tight font-semibold uppercase mb-8 transition-all duration-500 delay-100 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
       }`}>
         where I've worked & studied
@@ -132,40 +132,6 @@ const Experience = () => {
         </div>
       </div>
 
-      <style jsx>{`
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        
-        @keyframes slideInRight {
-          from {
-            opacity: 0;
-            transform: translateX(-20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateX(0);
-          }
-        }
-        
-        @keyframes slideInLeft {
-          from {
-            opacity: 0;
-            transform: translateX(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateX(0);
-          }
-        }
-      `}</style>
     </section>
   );
 };
