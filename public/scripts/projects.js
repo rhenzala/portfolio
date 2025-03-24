@@ -1,11 +1,21 @@
 import picodrive from "../../src/assets/picodrive.png";
-import members from "../../src/assets/members.png";
+import blog from "../../src/assets/blog.png";
 import network from "../../src/assets/network.png";
 import readpi from "../../src/assets/readpi.png";
 
 const projects = [
     {
       id: 1,
+      title: "Mini Blog",
+      description:
+        "A simple blog that can render markdown in posts and comments.",
+      sourceCode: "https://github.com/rhenzala/blog-users",
+      demo: "https://mini-blog-pi.vercel.app/",
+      tags: ["express.js", "postgresql", "prisma-orm", "react", "tailwind", "jwt"],
+      imgSrc: blog,
+    },
+    {
+      id: 2,
       title: "File Uploader",
       description:
         "A simple file uploader built with Express.js, PrismaORM, and Supabase. Upload file and create folder, view and download files, view folder contents.",
@@ -13,16 +23,6 @@ const projects = [
       demo: "https://picodrive.onrender.com/",
       tags: ["express.js", "postgresql", "prisma"],
       imgSrc: picodrive,
-    },
-    {
-        id: 2,
-        title: "Members Only",
-        description:
-          "An exclusive clubhouse where the members can write anonymous posts.",
-        sourceCode: "https://github.com/rhenzala/members-only",
-        demo: "https://members-only-p2ns.onrender.com/",
-        tags: ["express.js", "postgresql", "ejs"],
-        imgSrc: members,
     },
     {
       id: 3,
